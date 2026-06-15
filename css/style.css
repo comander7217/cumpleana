@@ -213,40 +213,56 @@ section h2 {
    COUNTDOWN
 ========================== */
 
-.countdown-section {
-
-    text-align: center;
-}
-
 .countdown {
 
     display: flex;
 
     justify-content: center;
-    gap: 20px;
+
+    gap: 15px;
 
     flex-wrap: wrap;
 }
 
 .countdown div {
 
-    width: 120px;
+    width: 110px;
+
+    min-height: 140px;
 
     background: white;
 
-    padding: 25px;
+    padding: 20px;
 
     border-radius: 20px;
 
     box-shadow: 0 5px 15px rgba(0,0,0,.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
 }
 
 .countdown span {
 
-    font-size: 2rem;
+    font-size: 3rem;
+
     font-weight: bold;
 
     color: #c5a572;
+}
+
+.countdown p {
+
+    margin-top: 10px;
+
+    font-size: 1.2rem;
+
+    text-align: center;
 }
 
 /* ==========================
