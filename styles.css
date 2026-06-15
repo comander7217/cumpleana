@@ -1,0 +1,422 @@
+/* ==========================
+   RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background: #f8f5ef;
+    color: #2e2e2e;
+
+    font-family: 'Montserrat', sans-serif;
+
+    overflow-x: hidden;
+}
+
+/* ==========================
+   TIPOGRAFÍA
+========================== */
+
+h1,
+h2,
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+p {
+    line-height: 1.7;
+}
+
+/* ==========================
+   BOTONES
+========================== */
+
+button,
+.btn-location,
+.btn-rsvp {
+
+    border: none;
+    cursor: pointer;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    border-radius: 50px;
+
+    transition: .3s;
+}
+
+.btn-location,
+.btn-rsvp,
+#welcome-screen button {
+
+    background: #c5a572;
+    color: white;
+}
+
+.btn-location:hover,
+.btn-rsvp:hover,
+#welcome-screen button:hover {
+
+    transform: translateY(-3px);
+
+    background: #b58f54;
+}
+
+/* ==========================
+   WELCOME SCREEN
+========================== */
+
+#welcome-screen {
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.25),
+            rgba(0,0,0,.25)
+        ),
+        url("../img/portada.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.welcome-content {
+
+    padding: 30px;
+}
+
+.small-text {
+
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.date-text {
+
+    margin: 25px 0;
+}
+
+#welcome-screen h1 {
+
+    font-size: 4rem;
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+.hidden {
+    display: none;
+}
+
+section {
+    padding: 80px 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* ==========================
+   MÚSICA
+========================== */
+
+#musicBtn {
+
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: #c5a572;
+    color: white;
+
+    z-index: 1000;
+
+    font-size: 1.2rem;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero {
+
+    text-align: center;
+}
+
+.hero img {
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 6px solid #c5a572;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+
+    color: #b58f54;
+}
+
+.subtitle {
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ==========================
+   COUNTDOWN
+========================== */
+
+.countdown-section {
+
+    text-align: center;
+}
+
+.countdown {
+
+    display: flex;
+
+    justify-content: center;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.countdown div {
+
+    width: 120px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+.countdown span {
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: #c5a572;
+}
+
+/* ==========================
+   MENSAJE
+========================== */
+
+.message {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+/* ==========================
+   GALERÍA
+========================== */
+
+.gallery {
+
+    text-align: center;
+}
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+
+    margin-top: 40px;
+}
+
+.gallery-grid img {
+
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: .4s;
+}
+
+.gallery-grid img:hover {
+
+    transform: scale(1.03);
+}
+
+/* ==========================
+   EVENTO
+========================== */
+
+.event-details {
+
+    text-align: center;
+}
+
+.card {
+
+    max-width: 500px;
+
+    margin: 20px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+/* ==========================
+   RSVP
+========================== */
+
+.rsvp {
+
+    text-align: center;
+}
+
+.rsvp p {
+
+    margin-bottom: 25px;
+}
+
+/* ==========================
+   DESPEDIDA
+========================== */
+
+.closing {
+
+    text-align: center;
+
+    padding-bottom: 120px;
+}
+
+.closing h2 {
+
+    color: #b58f54;
+}
+
+/* ==========================
+   REVEAL
+========================== */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(60px);
+
+    transition: all .8s ease;
+}
+
+.reveal.active {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* ==========================
+   CORAZONES
+========================== */
+
+#hearts-container {
+
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+    h1 {
+
+        font-size: 2.5rem;
+    }
+
+    #welcome-screen h1 {
+
+        font-size: 3rem;
+    }
+
+    .hero img {
+
+        width: 220px;
+        height: 220px;
+    }
+
+    .countdown div {
+
+        width: 90px;
+    }
+}
