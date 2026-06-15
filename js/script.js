@@ -28,23 +28,7 @@ openBtn.addEventListener("click", () => {
 // BOTÓN MÚSICA
 // ==========================
 
-let isPlaying = true;
 
-musicBtn.addEventListener("click", () => {
-
-    if (music.paused) {
-
-        music.play();
-
-        musicBtn.innerHTML = "🎵";
-
-    } else {
-
-        music.pause();
-
-        musicBtn.innerHTML = "🔇";
-    }
-});
 
 // ==========================
 // CUENTA REGRESIVA
