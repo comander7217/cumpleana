@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carmen Rosa | 29 Años</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Música -->
+    <audio id="musica" loop>
+        <source src="audio/musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Pantalla de Bienvenida -->
+    <section id="welcome-screen">
+
+        <div class="welcome-content">
+
+            <p class="small-text">
+                Celebración de Cumpleaños
+            </p>
+
+            <h1>
+                Carmen Rosa
+            </h1>
+
+            <p class="date-text">
+                Sábado 20 de Junio
+            </p>
+
+            <button id="openInvitation">
+                Abrir Invitación
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Invitación -->
+    <main id="invitation">
+
+        <!-- Botón Música -->
+        <button id="musicBtn">
+            🎵
+        </button>
+
+        <!-- Hero -->
+        <section class="hero reveal">
+
+            <img src="img/portada.jpg" alt="Carmen Rosa">
+
+            <div class="hero-content">
+
+                <p class="subtitle">
+                    Nos reunimos para celebrar los
+                </p>
+
+                <h2>
+                    29 Años de
+                </h2>
+
+                <h1>
+                    Carmen Rosa
+                </h1>
+
+            </div>
+
+        </section>
+
+        <!-- Cuenta Regresiva -->
+        <section class="countdown-section reveal">
+
+            <h2>Faltan</h2>
+
+            <div class="countdown">
+
+                <div>
+                    <span id="days">00</span>
+                    <p>Días</p>
+                </div>
+
+                <div>
+                    <span id="hours">00</span>
+                    <p>Horas</p>
+                </div>
+
+                <div>
+                    <span id="minutes">00</span>
+                    <p>Minutos</p>
+                </div>
+
+                <div>
+                    <span id="seconds">00</span>
+                    <p>Segundos</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Mensaje -->
+        <section class="message reveal">
+
+            <h2>Con mucho cariño</h2>
+
+            <p>
+                Te invitamos a compartir una tarde especial,
+                llena de alegría, buenos momentos y la compañía
+                de quienes más apreciamos.
+            </p>
+
+        </section>
+
+        <!-- Galería -->
+        <section class="gallery reveal">
+
+            <h2>Momentos Especiales</h2>
+
+            <div class="gallery-grid">
+
+                <img src="img/foto1.jpg" alt="">
+                <img src="img/foto2.jpg" alt="">
+                <img src="img/foto3.jpg" alt="">
+
+            </div>
+
+        </section>
+
+        <!-- Evento -->
+        <section class="event-details reveal">
+
+            <h2>Detalles del Evento</h2>
+
+            <div class="card">
+
+                <h3>📅 Fecha</h3>
+                <p>Sábado 20 de Junio</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>⏰ Hora</h3>
+                <p>3:00 PM</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>📍 Lugar</h3>
+                <p>La Calera</p>
+
+            </div>
+
+            <a href="#" class="btn-location">
+                Ver Ubicación
+            </a>
+
+        </section>
+
+        <!-- Confirmación -->
+        <section class="rsvp reveal">
+
+            <h2>Confirmación de Asistencia</h2>
+
+            <p>
+                Tu presencia hará este día aún más especial.
+            </p>
+
+            <a href="#" class="btn-rsvp">
+                Confirmar por WhatsApp
+            </a>
+
+        </section>
+
+        <!-- Despedida -->
+        <section class="closing reveal">
+
+            <h2>Te Esperamos</h2>
+
+            <p>
+                Tu presencia será el mejor regalo.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Corazones -->
+    <div id="hearts-container"></div>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
